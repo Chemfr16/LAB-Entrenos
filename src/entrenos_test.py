@@ -10,8 +10,13 @@ def test_tipos_entreno(entrenos):
     tipos=tipos_entreno(entrenos)
     print(tipos)
 
+def test_entrenos_duracion_superior(entrenos):
+    tiempos=entrenos_duracion_superior(entrenos,40)
+    print(tiempos)
+
+
 
 if __name__=="__main__":
     entrenos=lee_entrenos("data/entrenos.csv")
     #test_lee_entrenos()
-    test_tipos_entreno(entrenos)
+    test_entrenos_duracion_superior(entrenos)
